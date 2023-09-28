@@ -5,12 +5,14 @@
     margin: 0;
     box-sizing: border-box;
 }
+
 .header{
     width: 100%;
     height: 900px;
     background-image: url(./images/header-bg.jpg);
     background-position: center;
     background-size: cover;
+    background-attachment: fixed;
     display: flex;
     justify-content: space-around;
     position: relative;
@@ -34,6 +36,12 @@
     font-weight: 400;
     line-height: 150%; 
     letter-spacing: 1.44px;
+}
+
+.fa-bars{
+    color: black;
+    font-size: 30px;
+    display: none;
 }
 
 ul{
@@ -62,12 +70,12 @@ li a{
 .header-btn {
     display: inline-block;
     width: 163px;
-    height: 51px;
+    height: 60px;
     border-radius: 5px;
     background: #C9453B;
     color: #FFF;
     font-family: Roboto;
-    font-size: 16px;
+    font-size: 13px;
     font-style: normal;
     font-weight: 400;
     line-height: 150%;
@@ -157,7 +165,7 @@ li a{
     justify-content: center;
     align-items: center;
     gap: 32px;
-    margin-left: 200px;
+    margin: auto;
 }
 
 
@@ -477,7 +485,7 @@ footer{
 }
 
 .top{
-    margin-bottom: 40px;
+    margin-bottom: 30px;
 }
 
 .footer-link a{
@@ -534,4 +542,435 @@ input{
     cursor: pointer;
     margin-left: 10px;
 }
+
+@media(max-width: 1440px){
+    .header{
+        padding: 25px 5%;
+    }
+}
+
+@media(max-width: 1170px){
+    .header{
+        padding: 20px 3%;
+    }
+    .header-logo a{
+        font-size: 20px;
+    }
+
+    .header-nav a{
+        margin: 0 15px;
+    }
+}
+
+@media (min-width: 447px) and (max-width: 769px){
+    .header{
+        width: 100%;
+        background-size: cover;
+    }
+    .header-nav{
+        position: absolute;
+        width: 100%;
+        height: 500px;
+        top: 0;
+        right: 0;
+        left: 0;
+        display: flex;
+        flex-direction: column;
+        background: #54e0fd;
+        transition: all 0.5s ease-in-out; 
+    }
+    .header-nav ul{
+        display: flex;
+        flex-direction: column;
+    }
+    .header-nav a{
+        display: block;
+        padding: 0;
+        font-size: 2.1rem;
+        font-weight: 500;
+        border-bottom: none;
+    }
+    .header-content{
+        padding-top: 300px;
+        margin: auto;
+    }
+    .header-content-btn{
+        margin: auto;
+        padding-right: 50px;
+        font-size: 13px;
+    }
+    .header-content-text {
+        display: flex;
+        flex-direction: column;
+        margin-top: 200px;
+        text-align: center;
+    }
+    .header-content-text h1{
+        font-size: 40px;
+        margin-top: 50px;
+    }
+
+    .header-content-text p{
+        font-size: 10px;
+    }
+    .header-btn{
+        font-size: 10px;
+        width: 130px;
+        height: 140px;
+        text-align: center;
+    }    
+    .section h2{
+        font-size: 30px;
+    }
+    .section p{
+        font-size: 20px;
+        text-align: center;
+    }
+    .section-container{
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        margin-top: 400px;
+    }
+    .section-flex{
+        margin: auto;
+        text-align: center;
+    }
+    .main{
+        margin-top: 500px;
+        margin-bottom: 1400px;
+    }
+    .main-text{
+        font-size: 30px;
+    }
+    .main-paragraph{
+        font-size: 10px;
+        text-align: center;
+    }
+    .main-container{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    .main-card{
+        margin-bottom: 80px;
+    }
+    .blog{
+        padding-top: 300px;
+    }
+    .blog h1{
+        font-size: 30px;
+        color: red;
+    }
+    .blog-p{
+        font-size: 10px;
+    }
+    .blog-pages{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .blog-item{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-right: 300px;
+    }
+    .footer-flex{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+    }
+    .footer-input{
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        flex-direction: column;
+        text-align: center;
+    }
+    input{
+        margin-bottom: 20px;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 990px){
+    .header{
+        width: 100%;
+        background-size: cover;
+    }
+    .header-nav{
+        position: absolute;
+        width: 100%;
+        height: 500px;
+        padding: 70px 50px;
+        top: 0;
+        right: 0;
+        left: 0;
+        display: flex;
+        flex-direction: column;
+        background: #54e0fd;
+        transition: all 0.5s ease-in-out; 
+    }
+    .header-nav ul{
+        display: flex;
+        flex-direction: column;
+    }
+    .header-nav a{
+        display: block;
+        font-size: 2.1rem;
+        font-weight: 500;
+        border-bottom: none;
+    }
+    .header-content{
+        padding-top: 300px;
+        margin: auto;
+    }
+    .header-content-btn{
+        margin: auto;
+        padding-right: 50px;
+        font-size: 13px;
+    }
+    .header-content-text {
+        display: flex;
+        flex-direction: column;
+        margin-top: 200px;
+        text-align: center;
+    }
+    .header-content-text h1{
+        font-size: 40px;
+        margin-top: 50px;
+    }
+
+    .header-content-text p{
+        font-size: 10px;
+    }
+    .header-btn{
+        font-size: 10px;
+        width: 140px;
+        height: 100px;
+        text-align: center;
+    }
+
+    .section h2{
+        font-size: 30px;
+    }
+    .section p{
+        font-size: 20px;
+        text-align: center;
+    }
+    .section-container{
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        margin-top: 400px;
+    }
+    .section-flex{
+        margin: auto;
+        text-align: center;
+    }
+    .main{
+        margin-top: 500px;
+        margin-bottom: 1400px;
+    }
+    .main-text{
+        font-size: 30px;
+    }
+    .main-paragraph{
+        font-size: 10px;
+        text-align: center;
+    }
+    .main-container{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    .main-card{
+        margin-bottom: 80px;
+    }
+    .blog{
+        padding-top: 300px;
+    }
+    .blog h1{
+        font-size: 30px;
+        color: red;
+    }
+    .blog-p{
+        font-size: 10px;
+    }
+    .blog-pages{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .blog-item{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-right: 300px;
+    }
+    .footer-flex{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+    }
+    .footer-input{
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        flex-direction: column;
+        text-align: center;
+    }
+    input{
+        margin-bottom: 20px;
+    }
+}
+
+@media (min-width: 990px) and (max-width: 1200px){
+    .header{
+        width: 100%;
+        background-size: cover;
+    }
+    .header-nav{
+        position: absolute;
+        width: 100%;
+        height: 500px;
+        padding: 70px 50px;
+        transition: all 0.5s ease-in-out; 
+    }
+    .header-nav ul{
+        top: 0;
+    } 
+    .header-nav a{
+        display: block;
+        font-size: 20px;
+        font-weight: 500;
+        border-bottom: none;
+    }
+    .header-content{
+        padding-top: 300px;
+        margin: auto;
+    }
+    .header-content-btn{
+        margin: auto;
+        padding-right: 50px;
+        font-size: 13px;
+    }
+    .header-content-text {
+        display: flex;
+        flex-direction: column;
+        margin-top: 200px;
+        text-align: center;
+    }
+    .header-content-text h1{
+        font-size: 40px;
+        margin-top: 50px;
+    }
+
+    .header-content-text p{
+        font-size: 10px;
+    }
+    .header-btn{
+        font-size: 5px;
+        width: 220px;
+        height: 60px;
+        text-align: center;
+    }
+
+    .section h2{
+        font-size: 30px;
+    }
+    .section p{
+        font-size: 20px;
+        text-align: center;
+    }
+    .section-container{
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        margin-top: 400px;
+    }
+    .section-flex{
+        margin: auto;
+        text-align: center;
+    }
+    .main{
+        margin-top: 500px;
+        margin-bottom: 1400px;
+    }
+    .main-text{
+        font-size: 30px;
+    }
+    .main-paragraph{
+        font-size: 10px;
+        text-align: center;
+    }
+    .main-container{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    .main-card{
+        margin-bottom: 80px;
+    }
+    .blog{
+        padding-top: 300px;
+    }
+    .blog h1{
+        font-size: 30px;
+        color: red;
+    }
+    .blog-p{
+        font-size: 10px;
+    }
+    .blog-pages{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .blog-item{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .footer-flex{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+    }
+    .footer-input{
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        flex-direction: column;
+        text-align: center;
+    }
+    input{
+        margin-bottom: 20px;
+    }
+}
+
+
+
+
 
